@@ -85,15 +85,4 @@ public class Main {
         Group groupp = (Group) in.readObject();
         addGroup(groupp.getName(), groupp.getRoom());
     }
-
-/*    static void getGroup(Group group) throws IOException, ClassNotFoundException {
-        final String fileName = group.getName() + ".json";
-        File f = new File(fileName);
-        if (f.exists() && !f.isDirectory()) {
-            ObjectInputStream in = new ObjectInputStream(new FileInputStream(fileName));
-            Group groupp = (Group) in.readObject();
-
-            System.out.println("TEST: " + groupp.getName());
-        }
-    }*/
 }
